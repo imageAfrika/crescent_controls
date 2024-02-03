@@ -1,0 +1,17 @@
+/* google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;padding: 0;
+    scroll-behavior: smooth;
+    box-sizing:border-box;
+    scroll-padding-top: 2rem;
+}
+/* some variables*/
+:root{
+    --main-color:#ffb43a ;
+    --hover-color:hsl(37, 94%, 57%) ;
+    --body-color:black ;
+    --container-color:#2d2e37 ;
+    --text-color:#fcfeff ;
+}

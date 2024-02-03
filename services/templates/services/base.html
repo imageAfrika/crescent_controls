@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}Cresent Controls</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+</head>
+<body>
+    <div>
+        <header class="header">
+            <ul>
+                <li>About Us</li>
+                <li>Management</li>
+                <li>Contact </li>
+                <li>E-Tender</li>
+                <li>Research</li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="nav-link">
+            <ul>
+                <li><a href="{% url 'services:index' %}">Home</a></li>
+                <li><a href="{% url 'services:all_services' %}">Services</a></li>
+                <button>Get a quote</button>
+            </ul>
+
+    </div>
+
+    {% block header%}{% endblock header%}
+    {% block content%}{% endblock content%}
+
+
+</body>
+</html>

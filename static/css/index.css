@@ -1,0 +1,90 @@
+header{
+    background-color:slateblue;
+    font-size: 10px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 75px;
+    list-style: none;
+    cursor: pointer;
+}
+header ul li{
+color: white;
+}
+
+.nav-link{
+    background-color:rgb(228, 222, 222);
+    font-size: 12px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 75px;
+    list-style: none;
+    cursor: pointer; 
+}
+.nav-link li:hover{
+    color: red;
+    transition:0.3s all linear ;
+    transform: scale(1.2);
+    
+}
+.nav-link ul li{
+column-gap: 10px;
+}
+.nav-link button{
+    width: 100px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 10px;
+    
+}
+.nav-link button:hover{
+    background-color: slateblue;
+    cursor: pointer;
+    transition: 3s;
+
+}
+.slogan{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.slogan h5{
+    font-size: 25px;
+    font-style: normal;
+    font-weight: lighter;
+}
+.slogan h3{
+    font-size: 70px;
+    font-style: normal;
+    font-weight: lighter;
+}
+.slogan h1{
+    font-size: 70px;
+    font-style: normal;
+    font-weight:bold;
+}
+.landing-page{
+    background-image: url("images/river mountain.webp");
+    height: 80vh;
+    width: 100%;
+}
