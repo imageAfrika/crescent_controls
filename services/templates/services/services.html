@@ -7,31 +7,33 @@
     <title>{% block title %}Services | {% endblock title %}</title>
 </head>
 <body>
-    {% block header %}
-        <h1 class="heading">Services Offered</h1>
-    {% endblock header %}
+    <div class="full_body">
+        {% block header %}
+            <h1 class="heading">Services Offered</h1>
+        {% endblock header %}
 
-    {% block content %}
-        <div class="services_container">
-            <ul class="services">
-                {% for service in services %}
-                    <div class="container">
-                        <li class="service_list">
-                            <h2>
-                                <a href="{% url 'services:service' service.slug %}">{{service.service_name}}</a>
-                            </h2>
-                            {% if service.service_image %}
-                            <a href="{% url 'services:service' service.slug %}">
-                                <img " src="{{service.service_image.url}}" alt="images">
-                            </a>
-                            <p>{{service.intro}}</p>
-                            {% endif %}
-    
-                        </li>
-                    </div>
-                {% endfor %}
-            </ul>
-        </div>
-    {% endblock content %}
+        {% block content %}
+            <div class="services_container">
+                <ul class="services">
+                    {% for service in services %}
+                        <div class="service_container">
+                            <li class="service_list">
+                                <h2>
+                                    <a href="{% url 'services:service' service.slug %}">{{service.service_name}}</a>
+                                </h2>
+                                {% if service.service_image %}
+                                <a href="{% url 'services:service' service.slug %}">
+                                    <img " src="{{service.service_image.url}}" alt="images">
+                                </a>
+                                <p>{{service.intro}}</p>
+                                {% endif %}
+        
+                            </li>
+                        </div>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endblock content %}
+    </div>
 </body>
 </html>

@@ -11,18 +11,23 @@
         <h1 class="heading">{{service.service_name}}</h1>
     {% endblock header %}
 
-    {% block content %}
-        <p>{{service.intro}}</p>
-
-        <ul>
-            {% for sub_service in sub_services %}
-                <li>
-                    <h2>{{sub_service.sub_service_name}}</h2>
-                    <p>{{sub_service.info}}</p>
-                    <img src="{{sub_service.sub_service_image.url}}" alt="images">
-                </li>
-            {% endfor %}
-        </ul>
+    {% block content %}    
+        <div class="sub_services_container">
+            <ul class="sub_services">
+                {% for sub_service in sub_services %}
+                    <div class="sub_service_container">
+                        <li class="sub_service_list">
+                            <h2>{{sub_service.sub_service_name}}</h2>
+                            <img src="{{sub_service.sub_service_image.url}}" alt="images">
+                            <p>{{sub_service.info}}</p>
+                            <button>
+                                <a href="#">Learn More</a>
+                            </button>                            
+                        </li>
+                    </div>
+                {% endfor %}
+            </ul>
+        </div>
     {% endblock content %}
 </body>
 </html>
