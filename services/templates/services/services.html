@@ -9,7 +9,7 @@
 <body>
     <div class="full_body">
         {% block header %}
-            <h1 class="heading">Services Offered</h1>
+            <h1 class="heading">Our Services</h1>
         {% endblock header %}
 
         {% block content %}
@@ -23,7 +23,7 @@
                                 </h2>
                                 {% if service.service_image %}
                                 <a href="{% url 'services:service' service.slug %}">
-                                    <img " src="{{service.service_image.url}}" alt="images">
+                                    <img src="{{service.service_image.url}}" alt="images">
                                 </a>
                                 <p>{{service.intro}}</p>
                                 {% endif %}

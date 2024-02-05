@@ -15,16 +15,14 @@
         <div class="sub_services_container">
             <ul class="sub_services">
                 {% for sub_service in sub_services %}
-                    <div class="sub_service_container">
-                        <li class="sub_service_list">
-                            <h2>{{sub_service.sub_service_name}}</h2>
-                            <img src="{{sub_service.sub_service_image.url}}" alt="images">
-                            <p>{{sub_service.info}}</p>
-                            <button>
-                                <a href="#">Learn More</a>
-                            </button>                            
-                        </li>
-                    </div>
+                    <li class="sub_service_list">
+                        <h3>{{sub_service.sub_service_name}}</h3>
+                        <img src="{{sub_service.sub_service_image.url}}" alt="images">
+                        <p>{{sub_service.info}}</p>
+                        <button>
+                            <a href="#">Learn More</a>
+                        </button>                            
+                    </li>
                 {% endfor %}
             </ul>
         </div>

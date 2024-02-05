@@ -1,42 +1,72 @@
+:root{
+    --main-color:#ffb43a ;
+    --hover-color:hsl(37, 94%, 57%) ;
+    --body-color:black ;
+    --container-color:#2d2e37 ;
+    --text-color:#fcfeff ;
+    --background-color: rgba(245, 237, 237, 0.445);
+    --theme-color: #1e1e1e ;
+    --secondary-color: orange;
+    --body-color: rgb(8, 8, 8);
+    --hover-color: ;
+    --text-color:#fff ;
+    --light-body: #272626;
+    --app-fab-color: hsla(0,0%,100%,0.6);
+    --app-fab-background-color: rgba(30,30,30,0.72);
+    --app-fab-border-color: hsla(0,0%,100%,0.04);
+    
+    --color-primary: hsla(0,0%,93.3%,0.8);
+    --color-secondary: hsla(0,0%,100%,0.2);
+    --background: #121212;
+    --background-gradient: linear-gradient(180deg,#121212,#252525 25%,#252525 50%,#252525 75%,#121212);
+    --shadow-gradient: linear-gradient(90deg,rgba(18,18,18,0.8),rgba(18,18,18,0));
+    --hover-background: hsla(0,0%,100%,0.06);
+    --background: #121212;
+    
+}
+
 header{
-    background-color:slateblue;
+    background-color:var(--background);
     font-size: 10px;
     height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    gap: 10px;
+    border: 0.02px solid rgba(252, 252, 252, 0.116);
     
 }
+
 .header ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 75px;
     list-style: none;
     cursor: pointer;
 }
-header ul li{
+header li{
 color: white;
+column-gap: 10px;
 }
-
 .nav-link{
-    background-color:rgb(228, 222, 222);
+    background-color:var(--background);
+    border: 0.02px solid rgba(252, 252, 252, 0.116);
     font-size: 12px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-    
 }
-ul{
+
+.nav-link ul{
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 75px;
     list-style: none;
     cursor: pointer; 
+    color: var(--text-color);
 }
 .nav-link li:hover{
     color: red;
@@ -46,45 +76,68 @@ ul{
 }
 .nav-link ul li{
 column-gap: 10px;
+color: var(--text-color);
+list-style: none;
+
 }
+.nav-link ul li a{
+    color: var(--text-color);}
+    
+
 .nav-link button{
     width: 100px;
     height: 25px;
-    background-color: red;
-    color: white;
+    background-color: var(--background);
+    border: 0.5px solid rgba(145, 143, 143, 0.349);
+    color: var(--text-color);
     outline: none;
-    border: 0px;
-    border-radius: 5px;
+    
+    border-radius: 10px;
     font-size: 10px;
     
 }
 .nav-link button:hover{
-    background-color: slateblue;
+    background-color: rgb(207, 153, 71);
     cursor: pointer;
-    transition: 3s;
+    transition: 3s; 
 
-}
+} 
 .slogan{
     margin-left: 200px;
     margin-top: 50px;
+    color: var(--text-color);
+    height: 80vh;
+    
 }
-.slogan h5{
+.slogan h6{
     font-size: 25px;
     font-style: normal;
     font-weight: lighter;
+    color: var(--text-color);
+}
+.slogan h5{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: lighter;
+    color: var(--text-color);
 }
 .slogan h3{
     font-size: 70px;
     font-style: normal;
     font-weight: lighter;
+    color: var(--text-color);
 }
 .slogan h1{
     font-size: 70px;
     font-style: normal;
-    font-weight:bold;
+    font-weight:lighter;
+    color: var(--text-color);
 }
 .landing-page{
-    background-image: url("images/river mountain.webp");
+
     height: 80vh;
-    width: 100%;
+    width: 98vw;
+    box-sizing: border-box;
+    
+    
 }
