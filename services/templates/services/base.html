@@ -16,6 +16,10 @@
 <body>
     <div>
         <header class="header">
+            <div class="logo_section">
+                <img class="logo" src="{%static 'images/CC Logo-01.png' %}" alt="Logo">
+            </div>
+            
             <ul>
                 <li>About Us</li>
                 <li>Building Management & Control Systems</li>
@@ -27,7 +31,9 @@
     </div>
 
     <div class="nav-link">
+        
             <ul>
+            
                 <li><a href="{% url 'services:index' %}">Home</a></li>
                 <li><a href="{% url 'services:all_services' %}">Services</a></li>
                 <button>Get a quote</button>

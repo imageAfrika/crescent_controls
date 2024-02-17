@@ -1,39 +1,94 @@
-/* google fonts*/
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;padding: 0;
+
+/* Global styles */
+* {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    margin:   0;
+    padding:   0;
     scroll-behavior: smooth;
-    box-sizing:border-box;
-    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+    scroll-padding-top:   2rem;
 }
-/* some variables*/
-:root{
-    --main-color:#ffb43a ;
-    --hover-color:hsl(37, 94%, 57%) ;
-    --body-color:black ;
-    --container-color:#2d2e37 ;
-    --text-color:#fcfeff ;
-    --background-color: rgba(245, 237, 237, 0.445);
-    --theme-color: #1e1e1e ;
+
+/* Variables */
+:root {
+    --main-color: #F3781C;
+    --hover-color: hsl(37,   94%,   57%);
+    --body-color: black;
+    --container-color: #2d2e37;
+    --text-color: #fcfeff;
+    --background-color: rgba(245,   237,   237,   0.445);
+    --theme-color: #1e1e1e;
     --secondary-color: orange;
-    --body-color: rgb(8, 8, 8);
-    --hover-color: ;
-    --text-color:#fff ;
     --light-body: #272626;
     --app-fab-color: hsla(0,0%,100%,0.6);
     --app-fab-background-color: rgba(30,30,30,0.72);
     --app-fab-border-color: hsla(0,0%,100%,0.04);
-    
     --color-primary: hsla(0,0%,93.3%,0.8);
     --color-secondary: hsla(0,0%,100%,0.2);
     --background: #121212;
-    --background-gradient: linear-gradient(180deg,#121212,#252525 25%,#252525 50%,#252525 75%,#121212);
+    --background-gradient: linear-gradient(180deg,#121212,#252525   25%,#252525   50%,#252525   75%,#121212);
     --shadow-gradient: linear-gradient(90deg,rgba(18,18,18,0.8),rgba(18,18,18,0));
     --hover-background: hsla(0,0%,100%,0.06);
-    --background: #121212;
-    
 }
-body{
-    /* background-color: var(--body-color); */
+
+/* Base styles */
+body {
+    background-color: var(--body-color);
+}
+
+.logo_section {
+    margin-left: 20px;
+}
+
+.logo {
+    width: 70px; /* Adjusted width */
+    height: auto;
+}
+
+/* Header styles */
+.header {
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation link styles */
+.nav-link ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav-link button {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.nav-link button:hover {
+    background-color: var(--hover-color);
+}
+
+/* Full body section styles */
+.full_body {
+    padding: 20px;
 }
